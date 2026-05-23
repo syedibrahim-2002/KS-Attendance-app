@@ -1,0 +1,95 @@
+{
+  "expo": {
+    "name": "Kalanjiyam Stores Attendance",
+    "slug": "attendance-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/kalanjiyam-logo.png",
+    "scheme": "attendance-manager",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Mark attendance at showroom",
+        "NSFaceIDUsageDescription": "Quick login with Face ID",
+        "NSCameraUsageDescription": "Take profile photo",
+        "NSPhotoLibraryUsageDescription": "Choose profile photo from gallery",
+        "NSPhotoLibraryAddUsageDescription": "Save profile photo"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/kalanjiyam-logo.png",
+        "backgroundColor": "#D32F2F"
+      },
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "POST_NOTIFICATIONS"
+      ],
+      "googleServicesFile": "./google-services.json",
+      "package": "com.kalanjiyamstores.attendance",
+      "versionCode": 1,
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/kalanjiyam-logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/kalanjiyam-logo.png",
+          "color": "#D32F2F",
+          "defaultChannel": "default",
+          "sounds": []
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Mark attendance at showroom location"
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Quick login with Face ID"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/kalanjiyam-logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#D32F2F"
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-secure-store",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "1f142b03-62f6-478d-add2-638775515174"
+      }
+    },
+    "owner": "syedibrahim2002"
+  }
+}

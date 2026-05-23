@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "261898880224",
+    "project_id": "ks-attendance-app",
+    "storage_bucket": "ks-attendance-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261898880224:android:7acb0efc8d102c8d173c85",
+        "android_client_info": {
+          "package_name": "com.kalanjiyamstores.attendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFLQZYLBtTwhzQZRG9uNG02_hrP-8qmyY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
